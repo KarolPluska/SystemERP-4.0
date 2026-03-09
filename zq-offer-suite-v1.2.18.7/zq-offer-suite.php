@@ -24,6 +24,7 @@ require_once ZQOS_PLUGIN_DIR . 'includes/class-zqos-auth.php';
 require_once ZQOS_PLUGIN_DIR . 'includes/class-zqos-rest.php';
 require_once ZQOS_PLUGIN_DIR . 'includes/class-zqos-admin.php';
 require_once ZQOS_PLUGIN_DIR . 'includes/class-zqos-panel.php';
+require_once ZQOS_PLUGIN_DIR . 'includes/class-zqos-stage1.php';
 require_once ZQOS_PLUGIN_DIR . 'includes/class-zqos-maintenance.php';
 require_once ZQOS_PLUGIN_DIR . 'includes/class-zqos-reminders.php';
 
@@ -51,4 +52,5 @@ add_action('plugins_loaded', function(){
   ZQOS_Rest::init();
   ZQOS_Admin::init();
   ZQOS_Panel::init();
+  ZQOS_Stage1::init();
 });
